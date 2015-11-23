@@ -30,15 +30,15 @@ public class MapGeneration : MonoBehaviour {
 	
 	private void Start ()
 	{
-		GameObject Player = Instantiate(prefabPlayer, new Vector3(12, -8, 0), Quaternion.identity) as GameObject;
+		GameObject Player = Instantiate(prefabPlayer, new Vector3(12, -6, 0), Quaternion.identity) as GameObject;
 		GameManager.Instance.SetPlayer(Player);
 		PlayerTransform = Player.GetComponent<Transform>();
 
 		Background1 = Instantiate(prefabBackground, new Vector3(0, 0, 10), Quaternion.identity) as GameObject;
 		Background2 = Instantiate(prefabBackground, new Vector3(BackgroundWidth, 0, 10), Quaternion.identity) as GameObject;
 
-		Grass1 = Instantiate(prefabGrass, new Vector3(0, -9.6f, 10), Quaternion.identity) as GameObject;
-		Grass2 = Instantiate(prefabGrass, new Vector3(GrassWidth, -9.6f, 10), Quaternion.identity) as GameObject;
+		Grass1 = Instantiate(prefabGrass, new Vector3(0, -5.6f, 0), Quaternion.identity) as GameObject;
+		Grass2 = Instantiate(prefabGrass, new Vector3(GrassWidth, -9.6f, 0), Quaternion.identity) as GameObject;
 	}
 	
 	// Update is called once per frame
