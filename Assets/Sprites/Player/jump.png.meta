@@ -1,0 +1,144 @@
+fileFormatVersion: 2
+guid: 4c1b42fcc1667488c8680b94c665d78b
+timeCreated: 1448281560
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: jump2_0
+    21300002: jump2_1
+    21300004: jump2_2
+    21300006: jump2_3
+    21300008: jump2_4
+    21300010: jump2_5
+    21300012: jump2_6
+    21300014: jump2_7
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: jump2_0
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 1523
+        width: 283
+        height: 574
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: jump2_1
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 1527
+        width: 386
+        height: 518
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: jump2_2
+      rect:
+        serializedVersion: 2
+        x: 1012
+        y: 1533
+        width: 374
+        height: 514
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: jump2_3
+      rect:
+        serializedVersion: 2
+        x: 1538
+        y: 1753
+        width: 462
+        height: 546
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: jump2_4
+      rect:
+        serializedVersion: 2
+        x: 2179
+        y: 1775
+        width: 473
+        height: 414
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: jump2_5
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 684
+        width: 342
+        height: 558
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: jump2_6
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 596
+        width: 250
+        height: 544
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: jump2_7
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 600
+        width: 299
+        height: 532
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
