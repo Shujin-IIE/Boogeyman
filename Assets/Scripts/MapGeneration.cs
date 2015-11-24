@@ -38,10 +38,9 @@ public class MapGeneration : MonoBehaviour {
 		Background2 = Instantiate(prefabBackground, new Vector3(BackgroundWidth, 0, 10), Quaternion.identity) as GameObject;
 
 		Grass1 = Instantiate(prefabGrass, new Vector3(0, -5.6f, 0), Quaternion.identity) as GameObject;
-		Grass2 = Instantiate(prefabGrass, new Vector3(GrassWidth, -9.6f, 0), Quaternion.identity) as GameObject;
+		Grass2 = Instantiate(prefabGrass, new Vector3(GrassWidth, -5.6f, 0), Quaternion.identity) as GameObject;
 	}
-	
-	// Update is called once per frame
+
 	private void Update ()
 	{
 		if (Background1.transform.position.x < PlayerTransform.position.x - 50 && ChildrenInvisible(Background1))
