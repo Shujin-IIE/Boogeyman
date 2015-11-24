@@ -37,8 +37,8 @@ public class MapGeneration : MonoBehaviour {
 		Background1 = Instantiate(prefabBackground, new Vector3(0, -1, 10), Quaternion.identity) as GameObject;
 		Background2 = Instantiate(prefabBackground, new Vector3(BackgroundWidth, -1, 10), Quaternion.identity) as GameObject;
 
-		Grass1 = Instantiate(prefabGrass, new Vector3(0, -4.5f, -2), Quaternion.identity) as GameObject;
-		Grass2 = Instantiate(prefabGrass, new Vector3(GrassWidth, -4.5f, -2), Quaternion.identity) as GameObject;
+		Grass1 = Instantiate(prefabGrass, new Vector3(0, -4.2f, -2), Quaternion.identity) as GameObject;
+		Grass2 = Instantiate(prefabGrass, new Vector3(GrassWidth, -4.2f, -2), Quaternion.identity) as GameObject;
 	}
 
 	private void Update ()

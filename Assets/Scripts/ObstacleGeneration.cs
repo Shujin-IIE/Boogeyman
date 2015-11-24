@@ -41,7 +41,7 @@ public class ObstacleGeneration : MonoBehaviour
 		if (type == 0)
 		{
 			obstacle.transform.position = new Vector3(NextObjectPos, -9.5f, 0);
-			if (scale > 1f) scale = 1f;
+			if (scale > 0.7f) scale = 0.7f;
 		}
 		else
 		{
