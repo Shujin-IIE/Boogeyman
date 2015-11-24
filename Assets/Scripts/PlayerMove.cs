@@ -17,6 +17,12 @@ public class PlayerMove : MonoBehaviour {
 
 	private bool DoubleJumping = false;
 
+	private bool Slow;
+
+	private float Timer = 0f;
+
+	private float SlowTime = 1.5f;
+
 	private void Start ()
 	{
 		body = GetComponent<Rigidbody2D>();
@@ -29,16 +35,24 @@ public class PlayerMove : MonoBehaviour {
 	{
 		//move right
 		float val = Speed * Time.deltaTime;
-		body.velocity = new Vector2 (val, body.velocity.y);
-		/*else if (Input.GetKey(KeyCode.LeftArrow))
+		body.velocity = new Vector2 (Slow ? (val/2) : val, body.velocity.y);
+
+		//if slow update timer
+		if (Slow)
 		{
-			float val = Speed * Time.deltaTime;
-			body.velocity = new Vector2 (-val, body.velocity.y);
-		}*/
+			if (Timer > SlowTime)
+			{
+				Slow = false;
+				Timer = 0f;
+			}
+			else
+			{
+				Timer += Time.deltaTime;
+			}
+		}
 	}
 
-	void OnCollisionEnter2D (Collision2D other) {
-		Debug.Log ("collision enter");
+	private void OnCollisionEnter2D (Collision2D other) {
 		if (other.collider.CompareTag("Ground")) {
 			Jumping = false;
 			DoubleJumping = false;
@@ -71,5 +85,10 @@ public class PlayerMove : MonoBehaviour {
 			DoubleJumping = true;
 			LaunchJumpAnim();
 		}
+	}
+
+	public void SlowPlayer()
+	{
+		Slow = true;
 	}
 }

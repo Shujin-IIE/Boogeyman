@@ -96,6 +96,8 @@ GameObject:
   - 114: {fileID: 430190148}
   - 114: {fileID: 430190149}
   - 114: {fileID: 430190150}
+  - 114: {fileID: 430190151}
+  - 114: {fileID: 430190152}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -151,6 +153,32 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 204ba12ed62dd4a5ba66abbf6b9af98b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &430190151
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 430190146}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e35d65428e384e2488cf9fd325f63a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefabMonster: {fileID: 134684, guid: f0fd85bd0d3bf48c7930e5840af38e53, type: 2}
+  prefabRock: {fileID: 134512, guid: c440776a4658d406e874b053fba1ec5f, type: 2}
+  prefabStump1: {fileID: 186516, guid: 4af24f36b92344a96996f37e40a3362e, type: 2}
+  prefabStump2: {fileID: 161228, guid: 8575e7bdc3bee41e29d1820f2be2c5f2, type: 2}
+--- !u!114 &430190152
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 430190146}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd43fc86017c14449b858760d9b34264, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1546303018
@@ -251,4 +279,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d083cfec0ca940559d7a36debb4032a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Offset: {x: 3, y: -1, z: -15}
+  Offset: {x: 10, y: -1, z: -15}

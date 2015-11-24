@@ -1,100 +1,70 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &134684
+--- !u!1 &134512
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 4
   m_Component:
-  - 4: {fileID: 435790}
-  - 212: {fileID: 21218544}
-  - 95: {fileID: 9580448}
-  - 114: {fileID: 11491772}
-  - 61: {fileID: 6113658}
-  - 114: {fileID: 11439190}
+  - 4: {fileID: 416512}
+  - 212: {fileID: 21280738}
+  - 61: {fileID: 6180600}
+  - 114: {fileID: 11429824}
   m_Layer: 0
-  m_Name: Monster
+  m_Name: rocher1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &435790
+--- !u!4 &416512
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 134684}
-  m_LocalRotation: {x: 0, y: 1, z: 0, w: -1.62920685e-07}
-  m_LocalPosition: {x: 64939.1914, y: -27.6866417, z: 0}
+  m_GameObject: {fileID: 134512}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 64933.3672, y: -27.4797993, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!61 &6113658
+--- !u!61 &6180600
 BoxCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 134684}
+  m_GameObject: {fileID: 134512}
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_UsedByEffector: 0
-  m_Offset: {x: 0, y: 2.45499992}
+  m_Offset: {x: 0, y: -.5}
   serializedVersion: 2
-  m_Size: {x: 8, y: 4.90999985}
---- !u!95 &9580448
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 134684}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 1fd0280d3a8f0428fa8730b058ae5a61, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &11439190
+  m_Size: {x: 5.76000023, y: 2.5}
+--- !u!114 &11429824
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 134684}
+  m_GameObject: {fileID: 134512}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 60c39b04c8c34479995df277fcdcb8df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &11491772
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 134684}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 316aad825e0e5487997240e2cee24d2b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!212 &21218544
+--- !u!212 &21280738
 SpriteRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 134684}
+  m_GameObject: {fileID: 134512}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  - {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -108,7 +78,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 944967500cc4844cb962dae37f7c4075, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7738d846f626a4315bb1f1950a6ede1a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &100100000
 Prefab:
@@ -124,8 +94,8 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+      objectReference: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 134684}
+  m_RootGameObject: {fileID: 134512}
   m_IsPrefabParent: 1
