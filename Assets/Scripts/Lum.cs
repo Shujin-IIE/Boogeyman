@@ -67,7 +67,6 @@ public class Lum : MonoBehaviour {
 
 
 	void OnTriggerEnter2D(Collider2D other) {
-		Debug.Log("test lum");
 		if (other.CompareTag ("Player")) {
 			// Add bonus value
 			PlayerLightComponent.AddLuminosity(BonusValue);
