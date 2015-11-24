@@ -18,7 +18,9 @@ public class Lum : MonoBehaviour {
 	private float volume;
 
 	[SerializeField]
-	private float bonusValue;
+	private float BonusValue = 1;
+	
+	private PlayerLight PlayerLightComponent;
 
 	void Start () {
 		x = Random.Range(-velocityMax, velocityMax);
@@ -30,6 +32,7 @@ public class Lum : MonoBehaviour {
 
 		volume = 0.5f;
 
+		PlayerLightComponent = PlayerLight.Instance;
 	}
 	
 	void Update () {
@@ -64,8 +67,10 @@ public class Lum : MonoBehaviour {
 
 
 	void OnTriggerEnter2D(Collider2D other) {
+		Debug.Log("test lum");
 		if (other.CompareTag ("Player")) {
 			// Add bonus value
+			PlayerLightComponent.AddLuminosity(BonusValue);
 
 			// Gestion son
 			/*AudioSource audio = GetComponent<AudioSource>();

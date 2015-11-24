@@ -111,7 +111,7 @@ Rigidbody2D:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 567727796}
-  m_Mass: 1
+  m_Mass: 30
   m_LinearDrag: 0
   m_AngularDrag: .0500000007
   m_GravityScale: 1
@@ -183,7 +183,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MaxJumpValue: 1
+  JumpMultiplier: 0
   MaxJumpChargeTime: .5
+  JumpChargeTime: 0
+  PlayerRigidBody: {fileID: 0}
+  IsGrounded: 0
+  HasAlreadyJumped: 0
+  InputManagerComponent: {fileID: 0}
 --- !u!1 &865016970
 GameObject:
   m_ObjectHideFlags: 0
