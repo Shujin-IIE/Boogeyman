@@ -4,7 +4,7 @@ public class ObstacleAnimation : MonoBehaviour
 {
 	private Animator Anim;
 
-	private float MinDistance = 15;
+	private float MinDistance = 25;
 
 	private float MaxDistance = 5;
 

@@ -34,11 +34,11 @@ public class MapGeneration : MonoBehaviour {
 		GameManager.Instance.SetPlayer(Player);
 		PlayerTransform = Player.GetComponent<Transform>();
 
-		Background1 = Instantiate(prefabBackground, new Vector3(0, 0, 10), Quaternion.identity) as GameObject;
-		Background2 = Instantiate(prefabBackground, new Vector3(BackgroundWidth, 0, 10), Quaternion.identity) as GameObject;
+		Background1 = Instantiate(prefabBackground, new Vector3(0, -1, 10), Quaternion.identity) as GameObject;
+		Background2 = Instantiate(prefabBackground, new Vector3(BackgroundWidth, -1, 10), Quaternion.identity) as GameObject;
 
-		Grass1 = Instantiate(prefabGrass, new Vector3(0, -4.8f, 0), Quaternion.identity) as GameObject;
-		Grass2 = Instantiate(prefabGrass, new Vector3(GrassWidth, -4.8f, 0), Quaternion.identity) as GameObject;
+		Grass1 = Instantiate(prefabGrass, new Vector3(0, -4.5f, -2), Quaternion.identity) as GameObject;
+		Grass2 = Instantiate(prefabGrass, new Vector3(GrassWidth, -4.5f, -2), Quaternion.identity) as GameObject;
 	}
 
 	private void Update ()
