@@ -152,6 +152,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 918660ffb9d0348b594d90fa61ff4525, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DiminishValue: .5
+  DeltaDiminishTime: 2
 --- !u!114 &11478636
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -163,13 +165,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 918660ffb9d0348b594d90fa61ff4525, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DiminishValue: .5
+  DeltaDiminishTime: 2
 --- !u!114 &11486380
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 135122}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fc7718c4baf06468380a4dc6cd3b6849, type: 3}
   m_Name: 
@@ -264,6 +268,10 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: m_LocalPosition.z
       value: -20
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
