@@ -4,8 +4,11 @@ using System.Collections;
 public class MapGeneration : MonoBehaviour {
 
 	[SerializeField]
-	private GameObject prefabBackground;
-	
+	private GameObject prefabBackground1;
+
+	[SerializeField]
+	private GameObject prefabBackground2;
+
 	[SerializeField]
 	private GameObject prefabGrass;
 
@@ -27,6 +30,10 @@ public class MapGeneration : MonoBehaviour {
 	private GameObject Grass1;
 	
 	private GameObject Grass2;
+
+	private ObstacleAnimation cat;
+	
+	private ObstacleAnimation hibou;
 	
 	private void Start ()
 	{
@@ -34,11 +41,14 @@ public class MapGeneration : MonoBehaviour {
 		GameManager.Instance.SetPlayer(Player);
 		PlayerTransform = Player.GetComponent<Transform>();
 
-		Background1 = Instantiate(prefabBackground, new Vector3(0, -1, 10), Quaternion.identity) as GameObject;
-		Background2 = Instantiate(prefabBackground, new Vector3(BackgroundWidth, -1, 10), Quaternion.identity) as GameObject;
+		Background1 = Instantiate(prefabBackground1, new Vector3(0, -1, 10), Quaternion.identity) as GameObject;
+		Background2 = Instantiate(prefabBackground2, new Vector3(BackgroundWidth, -1, 10), Quaternion.identity) as GameObject;
 
 		Grass1 = Instantiate(prefabGrass, new Vector3(0, -4.2f, -2), Quaternion.identity) as GameObject;
 		Grass2 = Instantiate(prefabGrass, new Vector3(GrassWidth, -4.2f, -2), Quaternion.identity) as GameObject;
+
+		cat = Background1.transform.GetChild(0).GetComponent<ObstacleAnimation>();
+		hibou = Background2.transform.GetChild(0).GetComponent<ObstacleAnimation>();
 	}
 
 	private void Update ()
@@ -46,11 +56,13 @@ public class MapGeneration : MonoBehaviour {
 		if (Background1.transform.position.x < PlayerTransform.position.x - 50 && ChildrenInvisible(Background1))
 		{
 			Background1.transform.Translate(2*BackgroundWidth, 0, 0);
+			cat.ResetAnimState();
 			Debug.Log ("moving bg1");
 		}
 		if (Background2.transform.position.x < PlayerTransform.position.x - 50 && ChildrenInvisible(Background2))
 		{
 			Background2.transform.Translate(2*BackgroundWidth, 0, 0);
+			hibou.ResetAnimState();
 			Debug.Log ("moving bg2");
 		}
 		if (Grass1.transform.position.x < PlayerTransform.position.x - 50 && ChildrenInvisible(Grass1))
